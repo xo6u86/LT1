@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GMCommands>
+	<ItemSetList>
+		<!-- +10 DKセット(定義サンプル) -->
+		<ItemSet Name="DKSet">
+			<Item Id="58" Amount="1" Enchant="10"/>
+			<Item Id="20010" Amount="1" Enchant="10"/>
+			<Item Id="20100" Amount="1" Enchant="10"/>
+			<Item Id="20166" Amount="1" Enchant="10"/>
+			<Item Id="20198" Amount="1" Enchant="10"/>
+		</ItemSet>
+	</ItemSetList>
+	<RoomList>
+		<!-- 城鎮 -->
+		<Room Name="古魯丁" LocX="32612" LocY="32734" MapId="4"/>
+		<Room Name="奇岩" LocX="33442" LocY="32797" MapId="4"/>
+		<Room Name="歌唱之島" LocX="32782" LocY="32756" MapId="68"/>
+		<Room Name="說話島" LocX="32580" LocY="32931" MapId="0"/>
+		<Room Name="亞丁" LocX="33966" LocY="33253" MapId="4"/>
+		<Room Name="歐瑞" LocX="34061" LocY="32276" MapId="4"/>
+		<Room Name="威頓" LocX="33709" LocY="32500" MapId="4"/>
+		<Room Name="風木" LocX="32621" LocY="33169" MapId="4"/>
+		<Room Name="隱藏之谷" LocX="32679" LocY="32866" MapId="2005"/>
+		<Room Name="妖森" LocX="33054" LocY="32323" MapId="4"/>
+		<Room Name="肯特" LocX="33050" LocY="32780" MapId="4"/>
+		<Room Name="海音" LocX="33612" LocY="33268" MapId="4"/>
+		<Room Name="火龍窟" LocX="33705" LocY="32504" MapId="4"/>
+		<Room Name="銀騎士村" LocX="33080" LocY="33392" MapId="4"/>
+		<Room Name="沉默洞窟" LocX="32854" LocY="32907" MapId="304"/>
+		<Room Name="燃柳" LocX="32715" LocY="32448" MapId="4"/>
+		<Room Name="甘特" LocX="32669" LocY="32790" MapId="3"/>
+		<Room Name="布魯迪卡洞穴" LocX="32739" LocY="32801" MapId="305"/>
+		<Room Name="遺忘" LocX="32828" LocY="32848" MapId="70"/>
+		<Room Name="夢島" LocX="32633" LocY="32817" MapId="303"/>
+		<Room Name="海賊島" LocX="32850" LocY="32799" MapId="480"/>
+
+		<!-- 城堡 -->
+		<Room Name="亞丁守護塔" LocX="34090" LocY="33261" MapId="4"/>
+		<Room Name="肯特守護塔" LocX="33170" LocY="32776" MapId="4"/>
+		<Room Name="海音內城" LocX="32572" LocY="33813" MapId="64"/>
+		<Room Name="奇岩內城" LocX="32719" LocY="32799" MapId="52"/>
+		<Room Name="亞丁內城" LocX="32895" LocY="32526" MapId="300"/>
+		
+		<!-- Field -->
+		<Room Name="沙漠商人" LocX="32861" LocY="33255" MapId="4"/>
+		
+		<!-- 地下監獄 -->
+		<Room Name="水1" LocX="32742" LocY="32812" MapId="72"/>
+		<Room Name="水2" LocX="32866" LocY="32807" MapId="73"/>
+		<Room Name="水3" LocX="32839" LocY="32852" MapId="74"/>
+		<Room Name="龍1" LocX="32740" LocY="32777" MapId="30"/>
+		<Room Name="龍2" LocX="32760" LocY="32781" MapId="31"/>
+		<Room Name="龍3" LocX="32709" LocY="32818" MapId="32"/>
+		<Room Name="龍4" LocX="32669" LocY="32869" MapId="33"/>
+		<Room Name="龍5" LocX="32746" LocY="32802" MapId="35"/>
+		<Room Name="龍6" LocX="32663" LocY="32846" MapId="36"/>
+		<Room Name="龍7" LocX="32668" LocY="32867" MapId="37"/>
+		<Room Name="古3" LocX="32798" LocY="32754" MapId="9"/>
+		<Room Name="古4" LocX="32764" LocY="32773" MapId="10"/>
+		<Room Name="古5" LocX="32729" LocY="32724" MapId="11"/>
+		<Room Name="古6" LocX="32805" LocY="32725" MapId="12"/>
+		<Room Name="古7" LocX="32730" LocY="32726" MapId="13"/>
+		<Room Name="蟻1" LocX="32738" LocY="32799" MapId="49"/>
+		<Room Name="蟻2" LocX="32740" LocY="32802" MapId="50"/>
+		<Room Name="蟻3" LocX="32764" LocY="32828" MapId="51"/>
+		<Room Name="奇2" LocX="32809" LocY="32793" MapId="54"/>
+		<Room Name="奇3" LocX="32734" LocY="32728" MapId="55"/>
+		<Room Name="奇4" LocX="32770" LocY="32730" MapId="56"/>
+		<Room Name="騎2" LocX="32802" LocY="32815" MapId="26"/>
+		<Room Name="騎3" LocX="32807" LocY="32812" MapId="27"/>
+		<Room Name="騎4" LocX="32799" LocY="32798" MapId="28"/>
+		<Room Name="肯1" LocX="32720" LocY="33088" MapId="240"/>
+		<Room Name="肯2" LocX="32759" LocY="32884" MapId="241"/>
+		<Room Name="肯3" LocX="32808" LocY="32918" MapId="242"/>
+		<Room Name="肯4" LocX="32742" LocY="32857" MapId="243"/>
+		<Room Name="風1" LocX="32810" LocY="32723" MapId="23"/>
+		<Room Name="風2" LocX="32809" LocY="32812" MapId="24"/>
+		<Room Name="海4" LocX="32800" LocY="32792" MapId="63"/>
+		
+		<!-- 象牙塔 -->
+		<Room Name="象牙塔" LocX="34041" LocY="32058" MapId="4"/>
+		<Room Name="象1" LocX="32771" LocY="32822" MapId="75"/>
+		<Room Name="象2" LocX="32772" LocY="32823" MapId="76"/>
+		<Room Name="象3" LocX="32763" LocY="32839" MapId="77"/>
+		<Room Name="象4" LocX="32893" LocY="32773" MapId="78"/>
+		<Room Name="象5" LocX="32772" LocY="32805" MapId="79"/>
+		<Room Name="象6" LocX="32748" LocY="32802" MapId="80"/>
+		<Room Name="象7" LocX="32766" LocY="32849" MapId="81"/>
+		<Room Name="象8" LocX="32742" LocY="32798" MapId="82"/>
+		<Room Name="象牙塔-塔拉斯" LocX="32766" LocY="32797" MapId="77"/>
+		
+		<!-- 傲慢之塔 -->
+		<Room Name="傲11" LocX="32631" LocY="32935" MapId="111"/>
+		<Room Name="傲21" LocX="32631" LocY="32935" MapId="121"/>
+		<Room Name="傲31" LocX="32631" LocY="32935" MapId="131"/>
+		<Room Name="傲41" LocX="32631" LocY="32935" MapId="141"/>
+		<Room Name="傲51" LocX="32669" LocY="32814" MapId="151"/>
+		<Room Name="傲61" LocX="32669" LocY="32814" MapId="161"/>
+		<Room Name="傲71" LocX="32669" LocY="32814" MapId="171"/>
+		<Room Name="傲81" LocX="32669" LocY="32814" MapId="181"/>
+		<Room Name="傲91" LocX="32669" LocY="32814" MapId="191"/>
+		<Room Name="傲10" LocX="32800" LocY="32800" MapId="110"/>
+		<Room Name="傲20" LocX="32800" LocY="32800" MapId="120"/>
+		<Room Name="傲30" LocX="32800" LocY="32800" MapId="130"/>
+		<Room Name="傲40" LocX="32800" LocY="32800" MapId="140"/>
+		<Room Name="傲50" LocX="32796" LocY="32796" MapId="150"/>
+		<Room Name="傲60" LocX="32720" LocY="32821" MapId="160"/>
+		<Room Name="傲70" LocX="32720" LocY="32821" MapId="170"/>
+		<Room Name="傲80" LocX="32724" LocY="32822" MapId="180"/>
+		<Room Name="傲90" LocX="32722" LocY="32827" MapId="190"/>
+		<Room Name="傲97" LocX="32692" LocY="32907" MapId="197"/>
+		<Room Name="傲100" LocX="32731" LocY="32856" MapId="200"/>
+		
+		<!-- 四龍 -->
+		<Room Name="火龍" LocX="32723" LocY="32796" MapId="67"/>
+		<Room Name="水龍" LocX="32769" LocY="32833" MapId="65"/>
+		<Room Name="風龍" LocX="34035" LocY="33011" MapId="4"/>
+		<Room Name="地龍" LocX="32668" LocY="32867" MapId="37"/>
+
+		<!-- 神殿 -->
+		<Room Name="伊娃神殿" LocX="32736" LocY="32815" MapId="62"/>
+
+		<!-- 其他 -->
+		<Room Name="黃昏山脈" LocX="34270" LocY="33094" MapId="4"/>
+		<Room Name="古代巨人之墓" LocX="32771" LocY="32870" MapId="400"/>
+		<Room Name="夢幻島入口" LocX="33978" LocY="32927" MapId="4"/>
+		<Room Name="獨眼" LocX="33654" LocY="33927" MapId="4"/>
+		<Room Name="鏡森" LocX="33709" LocY="33307" MapId="4"/>
+		<Room Name="地獄" LocX="32701" LocY="32777" MapId="666"/>
+		<Room Name="巨蟻女皇棲息地" LocX="33742" LocY="32856" MapId="543"/>
+		<Room Name="暗影神殿外圍" LocX="32729" LocY="32959" MapId="521"/>
+		<Room Name="集會場" LocX="32780" LocY="32848" MapId="451"/>
+		<Room Name="魔獸召喚室" LocX="32773" LocY="32814" MapId="456"/>
+		<Room Name="黑暗結界" LocX="32769" LocY="32858" MapId="457"/>
+		<Room Name="黑暗精靈召喚室" LocX="32763" LocY="32831" MapId="464"/>
+		<Room Name="底比斯沙漠" LocX="32689" LocY="32768" MapId="780"/>
+		<Room Name="底比斯金字塔內部" LocX="32794" LocY="32822" MapId="781"/>
+		<Room Name="龍監入口" LocX="33407" LocY="32414" MapId="4"/>
+		<Room Name="不死魔族拋棄之地" LocX="32561" LocY="33026" MapId="777"/>
+		<Room Name="精墓入口" LocX="32735" LocY="32807" MapId="444"/>
+		<Room Name="櫻花森林" LocX="32763" LocY="32814" MapId="610"/>
+		<Room Name="果子森林" LocX="32763" LocY="32825" MapId="612"/>
+		<Room Name="天空之城" LocX="32641" LocY="32850" MapId="5801"/>
+		<Room Name="提卡爾神廟" LocX="33237" LocY="32771" MapId="783"/>
+		<Room Name="GMRoom" LocX="32737" LocY="32796" MapId="99"/>
+		<Room Name="GMShop" LocX="33079" LocY="33402" MapId="4"/>
+		<!-- 測試地圖 -->
+		<Room Name="回憶之地" LocX="32744" LocY="32818" MapId="5166"/>
+		<Room Name="惡魔王之領土" LocX="32724" LocY="32800" MapId="5167"/>
+		<Room Name="奇怪的村落" LocX="32740" LocY="32869" MapId="613"/>
+		<!-- 未整理 -->
+<!--
+		<Room Name="SC" LocX="32738" LocY="32800" MapId="304"/>
+		<Room Name="Great Cavern Resistance Area" LocX="32549" LocY="32801" MapId="400"/>
+		<Room Name="Diad Fortress" LocX="32723" LocY="32851" MapId="320"/>
+		<Room Name="隠れ里" LocX="32601" LocY="32908" MapId="400"/>
+		<Room Name="Great Cavern Resistance Area" LocX="32571" LocY="32673" MapId="400"/>
+		<Room Name="Mineral Dungeon" LocX="32733" LocY="32985" MapId="330"/>
+		<Room Name="Temple of Shadow 2F" LocX="32700" LocY="32896" MapId="523"/>
+		<Room Name="Temple of Shadow 3F" LocX="32691" LocY="32894" MapId="524"/>
+		<Room Name="Temple of Shadow 3F" LocX="32691" LocY="32894" MapId="524"/>
+		<Room Name="Temple of Shadow 3F" LocX="32691" LocY="32894" MapId="524"/>
+		<Room Name="アデン城庭" LocX="34090" LocY="33294" MapId="4"/>
+		<Room Name="Heine Dungeon 3F" LocX="32727" LocY="32808" MapId="61"/>
+		<Room Name="Kingdom of Eva" LocX="32804" LocY="32869" MapId="63"/>
+		<Room Name="Lair of Valakas" LocX="33660" LocY="32465" MapId="4"/>
+		<Room Name="Giran" LocX="33432" LocY="32522" MapId="4"/>
+		<Room Name="Oren" LocX="34039" LocY="32476" MapId="4"/>
+		<Room Name="Gludio" LocX="32736" LocY="32708" MapId="4"/>
+		<Room Name="Gludio" LocX="32842" LocY="32945" MapId="4"/>
+		<Room Name="Windawood" LocX="32585" LocY="33409" MapId="4"/>
+		<Room Name="Windawood" LocX="32763" LocY="33349" MapId="4"/>
+		<Room Name="Lastavard Dungeon 1F" LocX="32761" LocY="32822" MapId="307"/>
+		<Room Name="Lastavard Dungeon 2F" LocX="32750" LocY="32824" MapId="308"/>
+		<Room Name="Lastavard Dungeon 3F" LocX="32757" LocY="32836" MapId="309"/>
+		<Room Name="Ancient 1F" LocX="32730" LocY="32860" MapId="2000"/>
+		<Room Name="Ancient 2F" LocX="32731" LocY="32800" MapId="2001"/>
+		<Room Name="Ancient 4F" LocX="32736" LocY="32811" MapId="2003"/>
+		<Room Name="Oum Dungeon" LocX="32737" LocY="32900" MapId="310"/>
+		<Room Name="Great Cavern Resistance Area" LocX="32572" LocY="32663" MapId="400"/>
+		<Room Name="Sanctuary of Evil" LocX="32929" LocY="32995" MapId="410"/>
+		<Room Name="Elemental Grave" LocX="32922" LocY="32812" MapId="430"/>
+		<Room Name="Pirate Island" LocX="32422" LocY="33074" MapId="440"/>
+		<Room Name="Front Gate of Lastavard" LocX="32658" LocY="32853" MapId="450"/>
+		<Room Name="話せる島 宿屋ホール" LocX="32735" LocY="32801" MapId="17100"/>
+		<Room Name="1F Meeting Area" LocX="32726" LocY="32847" MapId="451"/>
+		<Room Name="1F Shock Squad Training Area" LocX="32726" LocY="32824" MapId="452"/>
+		<Room Name="1F Evil Power King_s Power Room" LocX="32725" LocY="32851" MapId="453"/>
+		<Room Name="1F Wild Animal Torture Room" LocX="32726" LocY="32872" MapId="454"/>
+		<Room Name="1F Wild Animal Training Room" LocX="32726" LocY="32852" MapId="455"/>
+		<Room Name="1F Evil Power Summoning Room" LocX="32756" LocY="32869" MapId="456"/>
+		<Room Name="1F Off-Limits Area of Darkness" LocX="32664" LocY="32853" MapId="457"/>
+		<Room Name="2F Dark Magic Training Area" LocX="32811" LocY="32819" MapId="460"/>
+		<Room Name="Aden Inner Castle" LocX="32894" LocY="32535" MapId="300"/>
+		<Room Name="Kent" LocX="33119" LocY="32933" MapId="4"/>
+		<Room Name="カオティックテンプル" LocX="32887" LocY="32652" MapId="4"/>
+		<Room Name="Mainland Dungeon 7F" LocX="32727" LocY="32745" MapId="13"/>
+		<Room Name="Pirate Island Dungeon 1F" LocX="32738" LocY="32740" MapId="441"/>
+		<Room Name="Pirate Island Dungeon 2F" LocX="32861" LocY="32732" MapId="442"/>
+		<Room Name="Pirate Island Dungeon 3F" LocX="32864" LocY="32782" MapId="443"/>
+		<Room Name="Abyss Lake" LocX="32803" LocY="33049" MapId="420"/>
+		<Room Name="Talking Island" LocX="32563" LocY="32898" MapId="0"/>
+		<Room Name="ギランアジト" LocX="33426" LocY="32689" MapId="4"/>
+		<Room Name="ギランアジト" LocX="33377" LocY="32696" MapId="4"/>
+		<Room Name="Ancient 3F" LocX="32812" LocY="32872" MapId="2002"/>
+		<Room Name="Oum Dungeon" LocX="32806" LocY="32814" MapId="310"/>
+		<Room Name="Temple of Shadow Outland" LocX="32676" LocY="32960" MapId="521"/>
+		<Room Name="Temple of Shadow 1F" LocX="32657" LocY="32896" MapId="522"/>
+		<Room Name="Temple of Shadow 2F" LocX="32700" LocY="32896" MapId="523"/>
+		<Room Name="Temple of Shadow 3F" LocX="32691" LocY="32894" MapId="524"/>
+-->
+	</RoomList>
+</GMCommands>

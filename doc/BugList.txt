@@ -1,0 +1,516 @@
+﻿以下為目前已知但尚未修正或實裝問題.
+
+主系統類:
+1.殺人無經驗值 正服中 殺50級的人，經驗是25*25+1=626.
+2.商店收購道具資料未齊全.
+3.小巴房後門無開關可進入(地上牆上無機關).
+4.旅館租用未完成.
+5.古魯丁 傳送回家卷軸 座標有機率卡點.
+6.偶爾出現執行序壅塞造成伺服器不能回血回魔不能對話(期間使用公頻則一起陷入無法回血魔無法使用道具,登出依然紀錄角色在線上).
+7.寵物戰進入時雙方寵物位置有時不正確,兩方寵物有時無法互相攻擊.
+8.古魯丁幽靈之屋有時遊戲啟動跑沒多久或時間還沒到就會被強制傳送出來,甚至有時候在等待開門的時候就被傳出(有時踩遊戲內傳點也無法傳送).
+9.角色被鎖定時應顯示鎖鏈,未顯示.
+10.城堡擁有人無法指定攻城時間.
+11.城堡擁有人無法指定傭兵排列.
+12.城堡上沒有弓箭手.
+13.城堡血盟無法租用傭兵.
+14.攻城時旗幟內戰鬥區域錯誤.
+15.船票丟在寵物身上登船不會回收,可無限使用.
+16.村長無法領取稅收.
+17.變身套裝被相消後直接登出登入會還原.
+18.蟻洞的螞蟻孵化卵無法開啟(應新增NPC並固定點刷?).
+19.血盟盟主 打/pledge 顯示血盟名單，下方血盟成員總名單只能顯示到36人，其他人ID都看不到。
+20.王級怪物刷第一次之後超過設定時間不會重生(反王 克特 四色 黑長者 等等)。
+21.血盟王族無法更改成員階級 /階級 成員ID 守護騎士  會顯示 沒有叫XX的人。
+22.伊娃神殿無城門.城門開關 可直接闖入海音內城。
+23.時空裂痕開啟與關閉時間錯誤(應為每隔兩天晚上七點開啟 三小時關閉 地圖內王被殺死則開啟24小時).
+24.祝福道具判斷方式混亂(應取消資料庫中另做一份祝福道具改使用bless判斷即可).
+25.地圖計算進入人數(寫法尚須修正).
+26.商人無法顯示稅率.
+27.怪物無四屬性資料.
+28.屬性加成傷害力計算不正確(NPC無屬性傷害資料).
+29.GM指令 present 無效.
+30.施展魔法的主動怪物(Boss)只會站著遠距離使用魔法,不會主動靠近玩家.
+31.進入敵對陣營不會被怪物攻擊(原本友好度有列入計算,近期消失?).
+32.角色身上裝備已封印完成後,角色死亡掉落後應直接消失,而非噴出來.
+33.庫庫爾坎祭壇地圖不正確(進入直接當).
+34.任務試煉道具,取得後在非試煉地圖可裝備使用,可使用武防捲.
+35.硬皮怪壞刀機率過高.
+36.範圍魔法無法攻擊NPC.
+37.黑暗妖精魔法欄拖到最底部會出現寵物相關視窗(官方也一樣錯誤).
+38.傲慢100樓地圖容易卡點(地圖有修正?).
+39.角色射箭有異常(無障礙物被阻斷?).
+40.部分NPC gfxid錯誤(actid不符?)
+
+技能類:
+1.龍騎技能-奪命之雷 沒有束縛2秒的效果.
+2.使用範圍性的技能攻擊大量mob，mob頭上會有機率出現鏡反射的效果.
+3.龍騎士技能血之渴望無法與果實並存.
+參考網址 http://lineage.gametsg.com/index.php?view=skill&skill=298#skill_detail
+
+NPC類:
+1.狄亞得要塞內城無王宮總管.
+2.海賊島庫曼被攻擊時反應不正確(兩邊小兵被打時應該瞬移逃跑).
+3.亞丁地下城地圖無npc可傳送.
+4.夢幻之島王出生時間未確認.
+5.部份娃娃無施法特效.
+6.現實時間12點整(中午與凌晨)往遺忘之島的船隻無法啟動.
+7.底比斯傳送點尚不夠正確(開啟時間尚未完成).
+8.盟屋租用後付款完成第二次顯示對話錯誤,應為無須付款而非第二次仍可付款.
+9.二手貨商人 70020古魯丁 羅克 (32636:32777:4) 70056 亞丁 喬德 (33969:32958:4) 70068 歐瑞 福朗克 (34016:32262:4) 販賣道具無隨機變動加成.
+二手貨商人功能未實裝?
+10.二手貨商人 選擇 詢問有關二手貨商人 對話無反應.
+
+寵物類(非召喚):
+1.寵物扣飽食度未實裝.
+2.寵物攻速過快?
+3.寵物命中過高?
+4.寵物跟隨主人走速會突然變快變慢.
+
+任務類:
+1.疲憊的蜥蜴人戰士可以持續產生並且不會消失.
+2.龍騎士30級試煉 妖魔密使之笛子無法使用.
+3.幻術士45級試煉使用幻術師聯盟的證書與幻術士長老對話無選項.
+
+地圖傳點類:
+1.海音城：海音城內城到伊娃神殿沒有傳點(守門人與門)。
+2.無限大戰觀看模式結束時角色卡點.
+3.亞丁地監 在此處無法使用指定傳送術及瞬間移動卷軸。(尚未驗證)
+
+掉落道具類(尚未驗證):
+1.未掉落? 水元素守護者=神官法袍 風元素守護者=神官手套 火元素守護者=神官頭飾 地元素守護者=神官斗篷 闇元素守護者=黑暗腰帶
+2.污濁安特 污濁潘 污濁芮克妮 掉落道具錯誤?
+
+道具類:
+1.道具缺
+神奇戰鬥盒 http://gametsg.yatta.com.tw/lineage/index.php?view=item&item=9121
+驚喜遊樂盒 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9122#item_detail
+中秋禮盒 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9720#item_detail
+計算機 http://gametsg.yatta.com.tw/lineage/index.php?view=item&list=no&k1=item&item=4404
+由 奇岩 布萊斯 製作 材料需求: 鋼鐵塊x5 薄金屬板x1 金幣x1000
+
+以下組合包內容未知:
+力量組合包 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9459#item_detail
+敏捷組合包 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9460#item_detail
+體質組合包 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9461#item_detail
+精神組合包 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9462#item_detail
+智力組合包 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9463#item_detail
+寵物組合包 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9464#item_detail
+神力禮盒A http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9587#item_detail
+神力禮盒B http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9588#item_detail
+超時空寶箱 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9597#item_detail
+媽祖禮盒 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9630#item_detail
+驚喜禮盒 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9715#item_detail
+報到禮 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9718#item_detail
+時空裂痕冒險箱 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9723#item_detail
+
+卷軸藥水缺:
+體力增強捲軸 http://gametsg.yatta.com.tw/lineage/index.php?view=item&list=no&k1=item&item=9030
+魔力增強捲軸 http://gametsg.yatta.com.tw/lineage/index.php?view=item&list=no&k1=item&item=9031
+強化戰鬥捲軸 http://gametsg.yatta.com.tw/lineage/index.php?view=item&list=no&k1=item&item=9032
+黃金史雷佛變形捲軸 http://gametsg.yatta.com.tw/lineage/index.php?view=item&list=no&k1=item&item=9047
+紅色海音警衛變形捲軸 http://gametsg.yatta.com.tw/lineage/index.php?view=item&list=no&k1=item&item=9048
+戰鬥藥水 http://gametsg.yatta.com.tw/lineage/index.php?view=item&list=no&k1=item&item=9029
+穿越卷 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9594#item_detail
+暢遊卷 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9595#item_detail
+異界鐵盒 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9596#item_detail
+兌換憑證 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9717#item_detail
+神秘徽章 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9785#item_detail
+媽祖祝福平安符 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9629#item_detail
+時空之泉 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9730#item_detail
+裂痕之泉 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9731#item_detail
+
+傳送卷軸缺:
+精靈結晶 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=448#item_detail
+結盟瞬間移動捲軸 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9228#item_detail 龍騎士45級試煉道具
+妖精森林瞬間移動捲軸 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9280#item_detail 幻術士15級試煉道具
+歐瑞村莊瞬間移動捲軸 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9281#item_detail 幻術士30級試煉道具
+風木村莊瞬間移動捲軸 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9282#item_detail 幻術士45級試煉道具
+奇岩村莊瞬間移動捲軸 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9283#item_detail
+傲塔50樓傳送符石 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9309#item_detail
+傲塔60樓傳送符石 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9310#item_detail
+傲塔70樓傳送符石 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9311#item_detail
+傲塔80樓傳送符石 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9312#item_detail
+傲塔90樓傳送符石 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9313#item_detail
+傲塔100樓傳送符石 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9314#item_detail
+混沌1樓黑暗結界傳送符石 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9315#item_detail
+混沌2樓黑暗結界傳送符石 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9316#item_detail
+混沌3樓黑暗結界傳送符石 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9317#item_detail
+暗影神殿2樓傳送符石 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9318#item_detail
+暗影神殿3樓傳送符石 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9319#item_detail
+黑暗妖精聖地傳送符石 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9320#item_detail
+船舶之墓 深海傳送符石 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9321#item_detail
+精靈墓穴傳送符石 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9322#item_detail
+古代巨人之墓傳送符石 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9323#item_detail
+福利傳送回家捲軸：說話之島 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9745#item_detail
+福利傳送回家捲軸：古魯丁 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9746#item_detail
+福利傳送回家捲軸：肯特 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9747#item_detail
+福利傳送回家捲軸：風木 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9748#item_detail
+福利傳送回家捲軸：燃柳村 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9749#item_detail
+福利傳送回家捲軸：銀騎士村莊 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9750#item_detail
+福利傳送回家捲軸：奇岩 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9751#item_detail
+福利傳送回家捲軸：海音 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9752#item_detail
+福利傳送回家捲軸：歐瑞 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9753#item_detail
+福利傳送回家捲軸：威頓 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9754#item_detail
+
+有道具 未知是否實裝功能與製作
+41208 微弱的靈魂 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=6021#item_detail
+49216 普洛凱爾的護身符 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9246#item_detail 龍騎士50級試煉道具。能離開異界奎斯特的傳送符
+49202 時空裂痕邪念碎片 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9263#item_detail 幻術士45級試煉道具。 龍騎士、幻術士50級試煉道具。可以傳送到異界奎斯特
+49178 希蓮恩的護身符 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9267#item_detail 幻術士50級試煉道具。能離開異界奎斯特的傳送符
+
+防具缺:
+韓服(女性)
+和服(男性)
+
+防具多(desc-c列表中無道具):
+20270 情人項鍊
+20350 雪人的項鍊
+20351 雪人的胡蘿蔔
+20352 雪人的靴子
+20366 王族鱗甲
+20367 戰士金屬盔甲
+20368 妖精小藤甲
+20369 法師披肩
+20370 歷戰斗蓬
+20371 歷戰長靴
+20372 歷戰手套
+20373 歷戰鋼盔
+20374 歷戰之盾
+20375 歷戰上衣
+20376 王族項鍊
+20377 騎士項鍊
+20378 妖精項鍊
+20379 法師項鍊
+21000 思克巴服飾 (思克巴女皇變身頭巾?)
+21001 雪人服飾
+21002 冰石高崙服飾
+21039 灼熱的頭盔
+21040 灼熱的盾牌
+21041 灼熱的長靴
+21042 灼熱的手套
+21043 鐵壁的護身符
+21044 知識護身符
+21045 暗躍の護身符
+21046 翻弄の護身符
+21047 幸運金幣
+21061 男幽靈變身服裝
+21062 女幽靈變身服裝
+21063 男性泳衣︰三角褲
+21064 男性泳衣︰運動短褲
+21065 女性泳衣︰連身裙
+21066 女性泳衣︰比基尼
+21068 終極萬聖節南瓜盔甲
+21074-21080 親睦耳環(日版專用道具)
+21508 聖光戒指(台版專用道具 已回收)
+21509 8週年紀念戒指
+21546 九週年紀念耳環
+21548 九週年紀念戒
+21555 強化HP T恤
+
+強化卷軸缺:
+武器強化 古書 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=5268#item_detail
+古代之 武器強化 古書 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=5269#item_detail
+
+變形卷軸缺:
+幻之鱗 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=5421#item_detail
+
+武器資料重複?
+INSERT INTO `weapon` VALUES ('224', '象牙塔魔杖', '$3285', '$3285', 'staff', 'wood', '15000', '83', '75', '1326', '2', '2', '1', '6', '0', '0', '1', '0', '0', '0', '1', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '3', '0', '0', '0', '0', '0', '0', '0', '0', '1', '0', '0', '0');
+INSERT INTO `weapon` VALUES ('120', '象牙塔魔杖', '$3285', '$3285', 'staff', 'wood', '15000', '83', '75', '1326', '2', '2', '1', '6', '0', '0', '1', '0', '0', '0', '1', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '2', '1', '0', '0', '0', '0', '0', '0', '0', '1', '1', '0', '0');
+
+3.1C 未實裝
+1.庫庫爾坎刷怪(已刷怪 未確認 雙頭蛇座標不正確?).
+2.庫庫爾坎寶箱(已實裝 未確認可開啟內容).
+
+3.2C
+1.殷海薩的祝福(休息系統). http://tw.lineage.gamania.com/events/20100209_preview_e3s/b5.htm (已實裝 登入有時未立即顯示?)
+   A. 角色達49級之後，受到殷海薩的魔力影響，將可啟動「殷海薩的祝福」系統。
+   B. 當「殷海薩的祝福」啟動期間，練功將可獲得「狩獵經驗值+額外經驗值」。
+   C.「殷海薩的祝福」％數會隨著狩獵時所得到的額外經驗值逐漸消耗，當消耗至0％時則不再獲得額外經驗值。
+   D. 當玩家處於安全地區或角色登出狀態時，「殷海薩的祝福」％數會慢慢恢復，最高可達200%。
+
+3.2C 未實裝
+2.獎勵任務. http://tw.lineage.gamania.com/events/20100209_preview_e3s/b5_3.htm
+   小遊戲每日可進入次數 死亡競賽 20 幽靈之家 20 寵物競速 20 寵物戰 20 無限大賽 3 紀錄於每日0點歸0.
+
+NPC缺:
+1.威頓村 班酷 (33729, 32506)(已新增 已實裝)
+	 孵化淘氣龍和頑皮龍.
+2.威頓村 多魯嘉貝爾 (33692, 32519) 販售「多魯嘉之袋」。(已新增 已實裝)
+多魯嘉之袋一天(24小時)可以使用一次，總共可使用30次。(使用30次後自動消失)。(已新增 已實裝)
+3.威頓村 屠龍佈告欄 (33692, 32520) 取得龍之鑰匙後，可以張貼募集屠龍勇士的訊息。(已新增 限制功能未實裝 張貼功能錯誤)
+4.龍之門扉 點擊龍之鑰匙隨時可叫出(透過龍之門扉後可以進入到「安塔瑞斯洞穴入口」)。(已新增 進入地圖人數限制仍須改寫)
+  龍之門扉開啟後只能存在2小時，最多只有32人能夠一起進入安塔瑞斯洞穴。
+5.安塔瑞斯洞穴 卡瑞 (32935, 32732) 對話後，可以獲得具有特殊魔法效果的「卡瑞的祝福」。 (npc已新增 功能未實裝)
+6.安塔瑞斯棲息地入口 帕利特 (32680, 32680) 倉庫管理員，可以存領倉庫中道具。(已新增 已實裝)
+7.安塔瑞斯棲息地入口 伊帕奇 (32684, 32663) 雜貨商，販賣藥水、卷軸等物品。(已新增 功能未實裝)
+8.隱匿的巨龍谷入口 威頓村莊(33726, 32506) 可以進入到隱匿的巨龍谷中的蒼空之谷及侏儒部落中。(已新增 尚未放置 限制與地圖未實裝)
+	A.同伺服器任一組人馬優先戰勝地龍-安塔瑞斯後，在威頓村莊將會出現「隱匿的巨龍谷入口」。
+	B.「隱匿的巨龍谷入口」將會存在現實24小時(依第一個戰勝地龍-安塔瑞斯的時間起算)。
+	C.隱匿的巨龍谷，在進入時有以下等級區分：Lv.30~Lv.51：侏儒部落 Lv.52以上：蒼空之谷
+9.奇岩廣場 魔法師 梅琳 (33429, 32824) 對話後，可以進入奇岩地監一樓。(已新增 已實裝 新地圖未知是否正確 地圖時間限制已實裝 尚未驗證進入時輸出訊息與真實傳送回村位置)
+   奇岩地間相關資料:
+   變更進入奇岩地監的方式，將改由透過NPC對話後進行傳送。
+   地監傳入點地圖位置 http://tw.lineage.gamania.com/events/20100209_preview_e3s/images/b3_a3_02.jpg
+   「奇岩地監」內的奇岩強盜死亡後，將會變身為更強大的浮士德惡靈。
+   每日(現實24小時)僅能在「奇岩地監」裡逗留3小時，超過時間將會傳送回村莊裡。
+   如果擊敗奇岩地監的強盜首領克萊恩(4f)，將有機會獲得強盜的寶箱鑰匙，透過這把鑰匙，可以打開在奇岩地監3樓隱藏的寶物箱，從中獲得道具。(寶物箱未實裝)
+
+
+
+
+魔眼:
+地龍之魔眼 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9663#item_detail
+使用後可以獲得特殊魔法效果。單次時效600秒，使用間隔1小時。物理攻擊迴避提升、石化耐性+3
+水龍之魔眼 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9664#item_detail
+使用後可以獲得特殊魔法效果。單次時效600秒，使用間隔1小時。增加魔法傷害減免、寒冰耐性+3 
+風龍之魔眼 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9665#item_detail
+使用後可以獲得特殊魔法效果。單次時效600秒，使用間隔1小時。增加魔法重擊率、睡眠耐性+3
+火龍之魔眼 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9666#item_detail
+使用後可以獲得特殊魔法效果。單次時效600秒，使用間隔1小時。額外攻擊點數+2、昏迷耐性+3 
+誕生之魔眼 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9667#item_detail
+使用後可以獲得特殊魔法效果。單次時效600秒，使用間隔1小時。物理攻擊迴避提升、增加魔法傷害減免、暗黑耐性+3 
+形體之魔眼 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9668#item_detail
+使用後可以獲得特殊魔法效果。單次時效600秒，使用間隔1小時。物理攻擊迴避提升、增加魔法傷害減免、增加魔法重擊率、支撐耐性+3 
+生命之魔眼 http://gametsg.yatta.com.tw/lineage/index.php?view=item&k1=item&item=9669#item_detail
+使用後可以獲得特殊魔法效果。單次時效600秒，使用間隔1小時。物理攻擊迴避提升、增加魔法傷害減免、增加魔法重擊率、額外攻擊點數+2、降低中毒機率
+
+
+3.2C 錯誤:
+1.四龍的力量/泉源/魅惑/霸氣 16種防具 (無降低中毒機率功能).
+2.隱匿的巨龍谷入口 .
+3.grdgfx 不正確 多魯嘉之袋 龍之鑰匙 xxT恤箱子 7色染料箱 淘氣/頑皮幼龍蛋 侏儒魔菇 侏儒符咒 古老水珍珠 古老白水晶 強盜首領的寶箱鑰匙 喀瑪王之心.
+4.invgfx 不正確 侏儒符咒  古老白水晶 強盜首領的寶箱鑰匙. 
+5.itemdesc_id 未知 四龍之渴望的眼淚 xxxx之勝利碎片 強盜首領的寶箱鑰匙.
+6.屠龍佈告欄功能不正確(與買賣佈告欄混用).
+7.七種魔眼效果未實裝.
+8.骸龍 喀瑪王1? 喀瑪王3? gfxid 未知.
+9.安塔瑞斯lv1-3 素質未知 三階段變身未實裝.
+10.安塔瑞斯lv1-3 幼龍/泥龍/荒龍/骸龍 喀瑪燄/喀瑪南/喀瑪王 怪物技能不正確 龍蛋用途未知(類似蟻穴寶箱?).
+
+3.3C錯誤
+1.龍之鑰匙叫出龍之門扉對話缺少選擇畫面.
+2.副本關卡門口未建立,鑰匙目前無效果.
+3.法利昂技能未實裝.
+
+3.3C 尚缺:
+
+http://tw.lineage.gamania.com/BulletinDetail.aspx?Bid=21825&kind=13
+
+一、NPC多魯嘉貝爾功能更新如下:
+
+1.    NPC販售之「多魯嘉之袋」原使用次數 30次，變更為 2次
+
+※更新前購買的「多魯嘉之袋」可使用次數不變
+
+2.    向NPC多魯嘉貝爾購買「多魯嘉之袋」金額由100萬金幣變更為10萬金幣
+
+3.    角色等級需50級以上方可購買「多魯嘉之袋」
+
+4.    NPC多魯嘉貝爾的對話內容部份變更
+
+ 
+
+二、龍之門扉與龍之棲息地更新如下:
+
+1.    變更為無法在戰鬥區域開啟「龍之門扉」
+
+2.    取消「龍之房間」死亡時的懲罰，在安塔瑞斯、法利昂棲息地角色死亡不會扣除經驗值、不會掉落道具，但會扣除飽食度
+
+※龍棲息地以外的地區角色死亡設定不變與原本相同(如龍之洞穴、洞穴入口、棲息地入口)
+
+
+NPC:
+新手導師:位於隱藏之谷村莊中。提供新手幫助及說明。
+修練場管理員:位於隱藏之谷的木人場附近。提供新手幫助，達到5等級的角色可透過「修練場管理員」領取象牙塔防具。 
+旅人諮詢員:位於亞丁大陸各村莊中，提供45級以下角色各種便利系統。
+村莊福利員:提供村莊福利道具製作及販售村莊專屬的福利傳送卷軸。(原副村長)
+受詛咒的巫女莎爾	法利昂洞穴 (33051, 32536)		對話後，可以獲得具有特殊魔法效果的「巫女莎爾的祝福」。 (npc已實裝 尚未刷入 對話未知)
+巴杰休			法利昂棲息地入口 (32935, 32680)		倉庫管理員，可以存領倉庫中道具。 (npc已實裝 gfxid未知 尚未刷入 對話未知)
+巴仕休			法利昂棲息地入口 (32684, 32663)		雜貨商，販賣藥水、卷軸等物品。http://tw.lineage.gamania.com/events/20100921_waterdragon/c02.html (npc已實裝 gfxid未知 尚未刷入 對話未知)
+
+怪物: http://tw.lineage.gamania.com/events/20100921_waterdragon/c05.html
+狂暴的骨鰻魚 (等級58 防禦-50 體力250 魔力100 善惡值0) 在法利昂洞穴內打開大貝殼時隨機會出現的怪物。 (npc已實裝 gfxid 未知是否正確 詳細素質未知 技能未實裝)
+五色珍珠 (等級55 防禦0 體力44 魔力3000 善惡值10 懼怕的屬性 風) 法利昂的守護者，五色珍珠會治癒法利昂的傷口，讓法利昂回覆體力。 (npc已實裝 詳細素質未知 技能未實裝)
+神秘的五色珍珠 (等級55 防禦0 體力36 魔力3000 善惡值10 懼怕的屬性 風) 法利昂的守護者，神秘的五色珍珠會對法利昂施放加速術。(npc已實裝 詳細素質未知 技能未實裝)
+托爾卡里 (等級99 防禦-99 體力28000 魔力10000 善惡值0 懼怕的屬性 風) 因法利昂揮舞爪子產生的海中龍捲風，會移動到玩家身旁攻擊玩家。 (npc已實裝 詳細素質未知 技能未實裝)
+阿爾波斯 麥嘉 (等級58 防禦-40 體力2400 魔力150 善惡值-100 懼怕的屬性 風) 法利昂的水中守護者，會用粗壯的手臂攻擊入侵者。 (npc已實裝 詳細素質未知 技能未實裝)
+阿爾波斯 菲阿 (等級58 防禦-40 體力2100 魔力2000 善惡值-100 懼怕的屬性 風) 法利昂的水中守護者，會遠遠的使用水箭攻擊入侵者。 (npc已實裝 詳細素質未知 技能未實裝)
+阿爾波斯 耐爾 LV62 LV64 LV66 法利昂的水中守護者，會使用水箭及水柱攻擊入侵者。 (npc已實裝 詳細素質未知 技能未實裝)
+法利昂 (等級85 防禦-80 體力120000 魔力5000 善惡值-8000 懼怕的屬性 風) (npc已實裝 技能未實裝)
+
+防具: http://tw.lineage.gamania.com/events/20100921_waterdragon/c06_2.html (已實裝)
+武器: http://tw.lineage.gamania.com/events/20100921_waterdragon/c06_3.html (已實裝)
+
+道具: http://tw.lineage.gamania.com/events/20100921_waterdragon/c06_1.html
+福利傳送卷軸：說話之島 	使用後將會回到登記的村莊(說話之島)，登記於說話之島的村民，可向所屬村莊的村莊福利員購買。
+福利傳送卷軸：古魯丁 	使用後將會回到登記的村莊(古魯丁)，登記於說話之島的村民，可向所屬村莊的村莊福利員購買。
+福利傳送卷軸：肯特 	使用後將會回到登記的村莊(肯特村)，登記於說話之島的村民，可向所屬村莊的村莊福利員購買。
+福利傳送卷軸：燃柳 	使用後將會回到登記的村莊(燃柳村)，登記於說話之島的村民，可向所屬村莊的村莊福利員購買。
+福利傳送卷軸：風木 	使用後將會回到登記的村莊(風木村)，登記於說話之島的村民，可向所屬村莊的村莊福利員購買。
+福利傳送卷軸：銀騎士 	使用後將會回到登記的村莊(銀騎士村)，登記於說話之島的村民，可向所屬村莊的村莊福利員購買。
+福利傳送卷軸：奇岩 	使用後將會回到登記的村莊(奇岩村)，登記於說話之島的村民，可向所屬村莊的村莊福利員購買。
+福利傳送卷軸：海音 	使用後將會回到登記的村莊(海音村)，登記於說話之島的村民，可向所屬村莊的村莊福利員購買。
+福利傳送卷軸：歐瑞 	使用後將會回到登記的村莊(歐瑞村)，登記於說話之島的村民，可向所屬村莊的村莊福利員購買。
+福利傳送卷軸：威頓 	使用後將會回到登記的村莊(威頓村)，登記於說話之島的村民，可向所屬村莊的村莊福利員購買。
+
+魔法釣竿:使用後猶如有魔法一樣可以自動釣魚。
+新鮮的餌:魔法釣魚所需準備的新鮮魚餌。
+河豚:肚子裡看起來裝著許多的好用道具。
+象牙塔魔法袋:使用後會得到象牙塔補給品卷軸，限制等級45級以下使用。
+象牙塔妙藥:HP 回覆量提升、MP回覆量增加，限制等級45級以下使用。
+象牙塔補給品:一小時能使用一次，使用後會獲得象牙塔補給道具，限制等級45級以下使用。
+地龍之精緻魔眼:可至威頓村找NPC「米米」花費10萬金幣製作，以與水龍之精緻魔眼混合成「誕生之魔眼」。 
+水龍之精緻魔眼:可至威頓村找NPC「米米」花費10萬金幣製作，以與地龍之精緻魔眼混合成「誕生之魔眼」。 
+風龍之精緻魔眼
+誕生之精緻魔眼
+火龍之精緻魔眼
+形象之精緻魔眼
+
+新手村莊更新 http://tw.lineage.gamania.com/events/20100921_waterdragon/c04_4.html
+1. 取消歌唱之島，所有職業角色皆會出生在隱藏之谷村莊中。(已實裝)
+2. 調整了隱藏之谷村莊的範圍，縮小從村莊至狩獵區的距離。
+3. 前往木人場及隱藏之谷地下洞穴的路途中，地面上新增了指示方向。
+4. 調整隱藏之谷村莊內部份傳送師的座標位置。(已修正)
+5. 取消了新手村莊中的部份NPC，如：治療師、加速師、初級傳送師等。(已修正)
+6. 改為新增「新手導師」，可以透過她了解遊戲基本功能及取得新手福利。(已實裝)
+7. 隱藏之谷中的鐵匠，調整為免費幫助新手玩家修理壞掉的武器。
+8. 亞丁大陸各村莊裡新增了「旅人諮詢員」，提供13等級從隱藏之谷畢業的玩家各種便利系統。
+9.調整了各村莊中可傳送至新手村莊的傳送師功能，及刪除了部份的傳送師。(古魯丁已實裝)
+10.使用各村莊的傳送師時，45等級以下的角色僅收取50%的傳送費用。
+新增新手福利
+1. 取消了原有的說話卷軸任務。
+2. 象牙塔武器變更為創立角色時就擁有了。
+3. 透過隱藏之谷村莊中的「新手導師」，將可獲得新手福利及升級資訊。
+4. 角色達到5等級後，與「修練場管理員」對話後，即可領取到象牙塔防具、輔助藥水及些許經驗值。
+5. 提奧的「隱藏之谷項鍊」新手任務變更為所有職業都可以執行。
+6. 調整了「象牙塔裝備」、「泡水套裝」的部份能力值。
+7. 象牙塔裝備變更為可以使用「象牙塔對武器施法的卷軸」或「象牙塔對盔甲施法的卷軸」進行強化加值。(已實裝)
+8. 象牙塔武器最多可以強化至「6」；象牙塔防具最多只可以強化至「4」。 (已實裝)
+※ 與「新手導師」對話時，依各職業、等級可以分別取得以下的福利：
+　 ．共同福利：加速術、體力／魔力回復。
+1級角色獎勵：自動升級為2等級，並且提供5張指定傳送卷軸(隱藏之谷)。
+2~4級 	引導至木人修練場 	法師4級 	傳送至說話之島吉倫
+（可學習第1級一般魔法）
+5~7級 	傳送至村莊西方近郊
+傳送至村莊東方近郊
+傳送至說話之島倉庫管理員 	王族5 	傳送至血盟執行人
+8~9級 	傳送至村莊南方狩獵場
+傳送至村莊東南方狩獵場
+傳送至村莊東北方狩獵場
+傳送至村莊西北方狩獵場
+傳送至說話之島倉庫管理員
+隱藏之谷地下洞穴入口 	妖精8 	傳送至說話之島吉倫
+（可學習第1級一般魔法）
+法師8級 	傳送至說話之島吉倫
+（可學習第2級一般魔法）
+10~12等級 	傳送至村莊西方狩獵場
+傳送至村莊南方狩獵場
+傳送至村莊東方狩獵場
+傳送至村莊北方狩獵場
+傳送至說話之島倉庫管理員
+傳送至隱藏之谷地下洞穴入口 	王族10級 	傳送至說話之島吉倫
+（可學習第1級一般魔法）
+妖精
+12級 	傳送至象牙塔
+（可學習第1級精靈魔法）
+法師12級 	傳送至說話之島吉倫
+（可學習第3級一般魔法）
+黑暗妖精12級 	傳送至黑暗妖精村莊賽帝亞
+（可學習第1級一般魔法）
+幻術士10級 	傳送至希培利亞村莊史菲爾
+（可學習第1級幻術士魔法）
+
+※ 旅人諮詢員所提供的服務：
+免費提供:
+象牙塔系列武器 / 防具 角色達35等級時會提供象牙塔飾品 象牙塔對盔甲施法的卷軸
+販售:
+象牙塔對武器施法的卷軸 象牙塔妙藥
+提供資訊:
+象牙塔魔法袋 泡水套裝的道具說明 T恤製作的方法
+傳送服務:
+傳送至魔法傳授者位置 
+
+
+釣魚系統更新 http://tw.lineage.gamania.com/events/20100921_waterdragon/c04_3.html
+自動釣魚
+1. 原有手動釣魚池變更為自動釣魚池。
+2. 角色需達15級才可以進入釣魚池裡。
+3. 釣魚爺爺及釣魚婆婆移動至古魯丁村莊中的釣魚小童旁邊。
+4. 可以透過釣魚爺爺馬魯可購買到「魔法釣竿」及「新鮮的餌」，魔法釣竿可以永久使用。
+5. 「新鮮的餌」每日最多只能購買400個，每日中午12點時，進行系統重置後才可再進行購買。
+6. 舊有的「餌」將無法再使用，可以賣回給「釣魚爺爺馬魯可」。
+7. 成功釣到魚時，會直接放到角色道具欄裡，但角色負重達100%時，會自動停止釣魚。
+8. 當釣到「閃爍的鱗片」後，也會自動停止釣魚。
+9. 收集「閃爍的鱗片」15個後，可以與釣魚婆婆 雷蒂亞兌換1張「對盔甲施法的卷軸」。
+10.成功釣到魚時，也會同時獲得些許的經驗值。
+11.若要離開釣魚池，可以與「釣魚小童 波爾」對話離開回到古魯丁村莊。
+12.調整了釣魚池中所能取得的道具賣價。 
+泡水套裝變更
+1. 泡水系列防具，可以使用「象牙塔對盔甲施法的卷軸」進行強化加值，最多可以強化至「4」。
+2. 泡水系列防具變更為限制35等級以上角色才能使用，且調整為不可轉移。
+3. 泡水套裝會隨著頭盔不同有不同的加成效果。
+4. 泡水系列防具除了透過釣魚池裡取得，也可透過「河豚」取得。
+5. 河豚可以透過釣魚池裡取得。
+6. 泡水套裝不再包含「泡水的盾牌」
+
+村莊相關更新 http://tw.lineage.gamania.com/events/20100921_waterdragon/c04_2.html
+1. 取消村長決定稅率的機制。
+2. 村莊貢獻度由原先的狩獵怪物來累積變更為製作村莊福利道具時才能累積。
+3. 取消「副村長」功能，變更為「村莊福利員」，提供製作時效較長且相對重量較輕的村莊福利道具。
+4. 貢獻度的計算時間由原先的遊戲時間一個月變更為現實時間七天，每週日晚上8點將重置村莊貢獻度。
+5. 村民領取福利獎金後，貢獻度也會自動重置。
+6. 村長的選拔仍由貢獻度最高的居民擔任，所能領取到的福利獎金幅度將遠大於一般居民。
+7. 新增的村莊福利道具及村莊專屬福利傳送卷軸，僅有村莊居民才能製作或購買。
+福利道具製作：所有福利道具無法轉移交易。 
+
+
+城堡區內變更: http://tw.lineage.gamania.com/events/20100921_waterdragon/c04_1.html
+1. 肯特城堡、妖魔城堡、風木城堡的守護塔調整位置，並在周圍新增防衛牆。(已實裝)
+2. 七座城堡的守護塔附近新增會施放無所遁形術的隱形偵查兵。
+3. 攻城時間中，當城主交替時，城堡外城門會自動修復。
+稅金計算變更
+1. 各城堡的稅金徵收方式未變更，城主仍可以決定10%~50%的稅率。
+2. 城堡總稅金的計算方式變更，將區分國稅、地方稅、朝貢等三部份，國稅額度依各城堡而有所不同。
+3. 地方稅屬於各城堡的實際收入，可自行運用。
+4. 朝貢部份則是需付出進貢給亞丁城堡。
+5. 國稅則是由各城堡中支出並集中到亞丁城之後再均分給七座城堡(包含亞丁城)。
+6. 亞丁城堡的實際收入，將包含地方稅、朝貢、國稅等三個部份。
+7. 其他六座城堡的實際收入，則包含地方稅、國稅二個部份。
+
+其他更新: http://tw.lineage.gamania.com/events/20100921_waterdragon/c07.html
+1. 隱藏之谷中的「雜貨商-佛朗」，新增販售「溶解劑」及收購「魔法結晶體」。
+2. 「魔法娃娃：雪怪」功能，由原先的「防禦+1、寒冰耐性+5」變更為「防禦+3、寒冰耐性 7」。
+3. 威頓村莊中的「馬沙」由原先的位置(33714, 32503)變更至(33718, 32488)。(倉庫管理員旁)
+4. 城堡中的NPC座標些微調整至更適當的位置。
+5. 降低了「神秘的體力藥水」的重量。
+6. 「勇者的南瓜袋子」變更為無法轉移。
+7. 古魯丁村莊、奇岩村莊、亞丁城鎮裡新增「派報少年」，負責發送消息。
+8. 當魔杖類道具(如：閃電魔杖)的使用次數剩於0時，將會自動刪除。 (已實裝)
+9. 商店村中的亞丁商團新增收購亞丁服務相關道具。
+亞丁服務道具:
+戰鬥藥水 	高級寵物項圈 	艾爾摩短劍 	艾爾摩魔杖 	村落記憶書
+體力增強卷軸 	神秘方塊 	艾爾摩單手劍 	艾爾摩鎖鏈劍 	贖罪聖書
+魔力增強卷軸 	艾爾摩皮盔甲 	艾爾摩雙手劍 	艾爾摩奇古獸 	寵物更名卷軸
+強化戰鬥卷軸 	艾爾摩金屬盔甲 	艾爾摩弩槍 	黃金史雷佛變形卷軸 	艾爾摩鎖鏈劍
+魔法娃娃：希爾黛斯 	艾爾摩法袍 	艾爾摩鋼爪 	紅色海音警衛變形卷軸 	艾爾摩奇古獸
+
+10.亞丁服務相關道具新增可以存放至個人倉庫的功能，但仍保持舊有不可交易、丟棄在地上或刪除等設定。
+11.新增可設定是否顯示村莊中NPC的名字，可以透過「功能選項＼遊戲選項」中選擇「開／關」。
+12.掉落在地上的道具，可以使用「Alt 鍵」來顯示道具名稱，或在「功能選項＼遊戲選項」中選擇「開／關」。
+
+魔眼注意事項:
+● 位於威頓村莊的「米米」(33695, 32522)，可以幫忙解除魔眼封印或是混合魔眼力量。
+　 (1)同樣的魔眼皆只能取得一個。
+　 (2)混合魔眼時是會有失敗的機率的。
+　 (3)變更了誕生之魔眼、形象之魔眼、生命之魔眼的製作材料。
+　 (4)透過米米可以將魔眼精煉成精緻魔眼。
+　 (5)取得精緻魔眼時再相互混合，則有機率可以取得誕生、形象、生命之魔眼。
+
+法利昂洞穴注意事項: 
+1. 法利昂洞穴處於深海之中，請留意角色是否有使用能在水中呼吸的道具，否則體力將會慢慢耗損。
+2. 「龍之鑰匙」在每日早上8點至中午12點之間無法使用。
+3. 當點擊「龍之鑰匙」後無法選擇法利昂或安塔瑞斯時，即代表其他玩家進行攻略中，暫時無法進入。
+4. 攻略完法利昂後，會取得法利昂血痕，在血痕消失之前，將無法再攻略龍之門扉-法利昂。
+5. 擊倒法利昂後，可以再進行攻略龍之門扉-安塔瑞斯。

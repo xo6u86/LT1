@@ -1,0 +1,559 @@
+以下為目前仍有的錯誤訊息紀錄
+
+NpcAI發生例外的錯誤。
+java.lang.NullPointerException
+        at net.l1j.server.model.L1Attack.possibleHitNPC(L1Attack.java:1588)
+        at net.l1j.server.model.L1Attack.calcNpcNpcHit(L1Attack.java:430)
+        at net.l1j.server.model.L1Attack.calcHit(L1Attack.java:343)
+        at net.l1j.server.model.instance.L1NpcInstance.attackTarget(L1NpcInstance.java:520)
+        at net.l1j.server.model.instance.L1NpcInstance.onTarget(L1NpcInstance.java:414)
+        at net.l1j.server.model.instance.L1NpcInstance.AIProcess(L1NpcInstance.java:301)
+        at net.l1j.server.model.instance.L1NpcInstance.access$400(L1NpcInstance.java:72)
+        at net.l1j.server.model.instance.L1NpcInstance$NpcAIThreadImpl.run(L1NpcInstance.java:235)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+        at java.lang.Thread.run(Unknown Source)
+
+NpcAI發生例外的錯誤。
+java.lang.NullPointerException
+        at net.l1j.server.model.L1Attack.possibleHitNPC(L1Attack.java:1588)
+        at net.l1j.server.model.L1Attack.calcNpcNpcHit(L1Attack.java:430)
+        at net.l1j.server.model.L1Attack.calcHit(L1Attack.java:343)
+        at net.l1j.server.model.instance.L1NpcInstance.attackTarget(L1NpcInstance.java:520)
+        at net.l1j.server.model.instance.L1NpcInstance.onTarget(L1NpcInstance.java:414)
+        at net.l1j.server.model.instance.L1NpcInstance.AIProcess(L1NpcInstance.java:301)
+        at net.l1j.server.model.instance.L1NpcInstance.access$400(L1NpcInstance.java:72)
+        at net.l1j.server.model.instance.L1NpcInstance$NpcAIThreadImpl.run(L1NpcInstance.java:235)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+        at java.lang.Thread.run(Unknown Source)
+
+
+以下為舊紀錄 僅供參考
+------------------------------------------------------------------------------------------------------------------
+
+20100330
+
+NpcAI發生例外的錯誤。
+java.lang.NullPointerException
+        at javolution.util.FastMap.remove(FastMap.java:737)
+        at net.l1j.server.model.L1HateList.remove(L1HateList.java:67)
+        at net.l1j.server.model.instance.L1NpcInstance.tagertClear(L1NpcInstance.java:724)
+        at net.l1j.server.model.instance.L1NpcInstance.checkTarget(L1NpcInstance.java:323)
+        at net.l1j.server.model.instance.L1NpcInstance.AIProcess(L1NpcInstance.java:265)
+        at net.l1j.server.model.instance.L1NpcInstance.access$400(L1NpcInstance.java:72)
+        at net.l1j.server.model.instance.L1NpcInstance$NpcAIThreadImpl.run(L1NpcInstance.java:235)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+        at java.lang.Thread.run(Unknown Source)
+
+20100507
+
+NpcAI發生例外的錯誤。
+java.lang.NullPointerException
+        at javolution.util.FastMap.remove(FastMap.java:733)
+        at net.l1j.server.model.L1HateList.remove(Unknown Source)
+        at net.l1j.server.model.instance.L1NpcInstance.tagertClear(Unknown Source)
+        at net.l1j.server.model.instance.L1NpcInstance.checkTarget(Unknown Source)
+        at net.l1j.server.model.instance.L1NpcInstance.AIProcess(Unknown Source)
+        at net.l1j.server.model.instance.L1NpcInstance.access$400(Unknown Source)
+        at net.l1j.server.model.instance.L1NpcInstance$NpcAIThreadImpl.run(Unknown Source)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+        at java.lang.Thread.run(Unknown Source)
+
+2009/11/26
+java.lang.IllegalStateException: Task already scheduled or cancelled
+        at java.util.Timer.sched(Timer.java:358)
+        at java.util.Timer.scheduleAtFixedRate(Timer.java:296)
+        at net.l1j.server.model.instance.L1NpcInstance.startMpRegeneration(Unknown Source)
+        at net.l1j.server.model.instance.L1PetInstance.setCurrentMp(Unknown Source)
+        at net.l1j.server.skills.SkillUse.useConsume(Unknown Source)
+        at net.l1j.server.skills.SkillUse.handleCommands(Unknown Source)
+        at net.l1j.server.model.L1MobSkillUse.magicAttack(Unknown Source)
+        at net.l1j.server.model.L1MobSkillUse.useSkill(Unknown Source)
+        at net.l1j.server.model.L1MobSkillUse.skillUse(Unknown Source)
+        at net.l1j.server.model.instance.L1NpcInstance.onTarget(Unknown Source)
+        at net.l1j.server.model.instance.L1NpcInstance.AIProcess(Unknown Source)
+        at net.l1j.server.model.instance.L1NpcInstance.access$400(Unknown Source)
+        at net.l1j.server.model.instance.L1NpcInstance$NpcAIThreadImpl.run(Unknown Source)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+        at java.lang.Thread.run(Thread.java:619)
+
+2009/11/21 上午 01:15:23 l1j.server.server.clientpackets.ClientBasePacket readS
+嚴重的: OpCode=92
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+        at java.lang.String.substring(String.java:1938)
+        at l1j.server.server.clientpackets.ClientBasePacket.readS(Unknown Source)
+        at l1j.server.server.clientpackets.C_ChatWhisper.<init>(Unknown Source)
+        at l1j.server.server.PacketHandler.handlePacket(Unknown Source)
+        at l1j.server.server.ClientThread$AutoResponse.run(Unknown Source)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+        at java.lang.Thread.run(Thread.java:619)
+
+2009/11/20 下午 05:54:35 l1j.server.server.ClientThread run
+嚴重的: null
+java.lang.NullPointerException
+        at l1j.server.server.model.Getback.ReadGetbackInfo(Unknown Source)
+        at l1j.server.server.model.Getback.GetBack_Location(Unknown Source)
+        at l1j.server.server.ClientThread.quitGame(Unknown Source)
+        at l1j.server.server.ClientThread.run(Unknown Source)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+        at java.lang.Thread.run(Thread.java:619)
+
+2009/11/20 下午 04:03:06 l1j.server.server.model.L1PcInventory saveItem
+嚴重的: The last packet successfully received from the server was 38,010,898 milliseconds ago.  The last packet sent successfully to the server was 38,010,898 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: The last packet successfully received from the server was 38,010,898 milliseconds ago.  The last packet sent successfully to the server was 38,010,898 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+        at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+        at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+        at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+        at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+        at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+        at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1074)
+        at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3313)
+        at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1940)
+        at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2109)
+        at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2648)
+        at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:2077)
+        at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1356)
+        at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.execute(NewProxyPreparedStatement.java:989)
+        at l1j.server.server.storage.mysql.MySqlCharactersItemStorage.executeUpdate(Unknown Source)
+        at l1j.server.server.storage.mysql.MySqlCharactersItemStorage.updateItemCount(Unknown Source)
+        at l1j.server.server.model.L1PcInventory.saveItem(Unknown Source)
+        at l1j.server.server.model.Instance.L1PcInstance.saveInventory(Unknown Source)
+        at l1j.server.server.ClientThread.quitGame(Unknown Source)
+        at l1j.server.server.ClientThread.run(Unknown Source)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+        at java.lang.Thread.run(Thread.java:619)
+Caused by: java.net.SocketException: Broken pipe
+        at java.net.SocketOutputStream.socketWrite0(Native Method)
+        at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:92)
+        at java.net.SocketOutputStream.write(SocketOutputStream.java:136)
+        at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:65)
+        at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:123)
+        at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3294)
+        ... 15 more
+
+
+2009/11/19 下午 11:25:25 l1j.server.server.log.LogDropItem storeLogDropItem
+嚴重的: database locked
+java.sql.SQLException: database locked
+        at org.sqlite.DB.execute(DB.java:270)
+        at org.sqlite.PrepStmt.execute(PrepStmt.java:57)
+        at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.execute(NewProxyPreparedStatement.java:989)
+        at l1j.server.server.log.LogDropItem.storeLogDropItem(Unknown Source)
+        at l1j.server.server.clientpackets.C_DropItem.<init>(Unknown Source)
+        at l1j.server.server.PacketHandler.handlePacket(Unknown Source)
+        at l1j.server.server.ClientThread$AutoResponse.run(Unknown Source)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+        at java.lang.Thread.run(Thread.java:619)
+
+20090808
+HpRegenerationByDoll.java 『娃娃回血效果』異常 。 _pc.get_food() : 225isOverWeight(_pc) : false_pc.getCurrentHp() : 1741
+
+20080807
+ l1j.server.server.model.Instance.L1MonsterInstance distributeDrop
+嚴重的: 0
+java.lang.ArrayIndexOutOfBoundsException: 0
+        at java.util.concurrent.CopyOnWriteArrayList.get(CopyOnWriteArrayList.java:343)
+        at l1j.server.server.datatables.DropTable.dropShare(Unknown Source)
+        at l1j.server.server.model.Instance.L1MonsterInstance.distributeDrop(Unknown Source)
+        at l1j.server.server.model.Instance.L1MonsterInstance.distributeExpDropKarma(Unknown Source)
+        at l1j.server.server.model.Instance.L1MonsterInstance.access$000(Unknown Source)
+        at l1j.server.server.model.Instance.L1MonsterInstance$Death.run(Unknown Source)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+        at java.lang.Thread.run(Thread.java:619)
+
+20090806
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+        at java.lang.String.substring(String.java:1938)
+        at l1j.server.server.clientpackets.ClientBasePacket.readS(Unknown Source)
+        at l1j.server.server.clientpackets.C_Rank.<init>(Unknown Source)
+        at l1j.server.server.PacketHandler.handlePacket(Unknown Source)
+        at l1j.server.server.ClientThread$AutoResponse.run(Unknown Source)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+        at java.lang.Thread.run(Thread.java:619)
+2009/8/13 上午 08:53:37 l1j.server.server.clientpackets.ClientBasePacket readS
+嚴重的: OpCode=78
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+        at java.lang.String.substring(String.java:1938)
+        at l1j.server.server.clientpackets.ClientBasePacket.readS(Unknown Source)
+        at l1j.server.server.clientpackets.C_Rank.<init>(Unknown Source)
+        at l1j.server.server.PacketHandler.handlePacket(Unknown Source)
+        at l1j.server.server.ClientThread$AutoResponse.run(Unknown Source)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+        at java.lang.Thread.run(Thread.java:619)
+
+20090805
+2009/8/8 下午 10:59:15 l1j.server.server.ClientThread run
+嚴重的: null
+java.lang.NullPointerException
+        at l1j.server.server.ClientThread.run(Unknown Source)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+        at java.lang.Thread.run(Thread.java:619)
+
+20090804
+2009/8/8 下午 11:05:26 l1j.server.server.clientpackets.C_NPCTalk <init>
+嚴重的: 找不到對應物件 objid=297436220
+2009/8/8 下午 11:05:27 l1j.server.server.clientpackets.C_NPCTalk <init>
+嚴重的: 找不到對應物件 objid=297436220
+2009/8/8 下午 11:05:30 l1j.server.server.clientpackets.C_NPCTalk <init>
+嚴重的: 找不到對應物件 objid=297436220
+
+20090803
+2009/8/8 下午 11:02:08 l1j.server.server.model.skill.L1SkillUse runSkill
+嚴重的: null
+java.lang.NullPointerException
+        at l1j.server.server.model.Instance.L1NpcInstance.checkTarget(Unknown Source)
+        at l1j.server.server.model.Instance.L1MonsterInstance.setLink(Unknown Source)
+        at l1j.server.server.model.Instance.L1NpcInstance.serchLink(Unknown Source)
+        at l1j.server.server.model.Instance.L1MonsterInstance.receiveDamage(Unknown Source)
+        at l1j.server.server.model.L1Magic.commitNpc(Unknown Source)
+        at l1j.server.server.model.L1Magic.commit(Unknown Source)
+        at l1j.server.server.model.skill.L1SkillUse.runSkill(Unknown Source)
+        at l1j.server.server.model.skill.L1SkillUse.handleCommands(Unknown Source)
+        at l1j.server.server.model.skill.L1SkillUse.handleCommands(Unknown Source)
+        at l1j.server.server.clientpackets.C_UseSkill.<init>(Unknown Source)
+        at l1j.server.server.PacketHandler.handlePacket(Unknown Source)
+        at Threading.R_AutoResponse$Response.run(Unknown Source)
+        at java.lang.Thread.run(Thread.java:619)
+
+20090802
+2009/8/7 下午 09:16:39 l1j.server.server.ClientThread run
+嚴重的: 19456
+java.lang.ArrayIndexOutOfBoundsException: 19456
+        at l1j.server.server.model.L1World.getInventory(Unknown Source)
+        at l1j.server.server.clientpackets.C_DropItem.<init>(Unknown Source)
+        at l1j.server.server.PacketHandler.handlePacket(Unknown Source)
+        at l1j.server.server.ClientThread.run(Unknown Source)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+        at java.lang.Thread.run(Thread.java:619)
+
+20090801
+l1j.server.server.model.L1Chaser run
+警告: null
+java.lang.NullPointerException
+        at l1j.server.server.model.Instance.L1NpcInstance.checkTarget(Unknown Source)
+        at l1j.server.server.model.Instance.L1NpcInstance.setHate(Unknown Source)
+        at l1j.server.server.model.Instance.L1MonsterInstance.receiveDamage(Unknown Source)
+        at l1j.server.server.model.L1Chaser.attack(Unknown Source)
+        at l1j.server.server.model.L1Chaser.run(Unknown Source)
+        at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:441)
+        at java.util.concurrent.FutureTask$Sync.innerRunAndReset(FutureTask.java:317)
+        at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:150)
+        at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$101(ScheduledThreadPoolExecutor.java:98)
+        at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.runPeriodic(ScheduledThreadPoolExecutor.java:181)
+        at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:205)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+        at java.lang.Thread.run(Thread.java:619)
+
+20090709
+l1j.server.server.model.L1PetMatch$L1PetMatchTimer run
+警告: null
+java.lang.NullPointerException
+        at java.util.concurrent.ConcurrentHashMap.containsValue(ConcurrentHashMap.java:799)
+        at java.util.concurrent.ConcurrentHashMap.contains(ConcurrentHashMap.java:863)
+        at l1j.server.server.model.L1World.getPlayer(Unknown Source)
+        at l1j.server.server.model.L1PetMatch.endPetMatch(Unknown Source)
+        at l1j.server.server.model.L1PetMatch$L1PetMatchTimer.run(Unknown Source)
+        at java.util.TimerThread.mainLoop(Timer.java:512)
+        at java.util.TimerThread.run(Timer.java:462)
+
+20090708
+l1j.server.server.model.skill.L1SkillUse runSkill
+嚴重的: null
+java.lang.NullPointerException
+        at l1j.server.server.model.skill.L1SkillUse.stopSkillList(Unknown Source)
+        at l1j.server.server.model.skill.L1SkillUse.deleteRepeatedSkills(Unknown Source)
+        at l1j.server.server.model.skill.L1SkillUse.runSkill(Unknown Source)
+        at l1j.server.server.model.skill.L1SkillUse.handleCommands(Unknown Source)
+        at l1j.server.server.model.skill.L1SkillUse.handleCommands(Unknown Source)
+        at l1j.server.server.clientpackets.C_LoginToServer.buff(Unknown Source)
+        at l1j.server.server.clientpackets.C_LoginToServer.<init>(Unknown Source)
+        at l1j.server.server.PacketHandler.handlePacket(Unknown Source)
+        at l1j.server.server.ClientThread$AutoHandle.run(Unknown Source)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+        at java.lang.Thread.run(Thread.java:619)
+
+20090707
+l1j.server.server.model.skill.L1SkillUse handleCommands
+嚴重的:
+java.lang.NullPointerException
+        at l1j.server.server.model.skill.L1SkillUse.checkUseSkill(Unknown Source)
+        at l1j.server.server.model.skill.L1SkillUse.handleCommands(Unknown Source)
+        at l1j.server.server.model.skill.L1SkillUse.handleCommands(Unknown Source)
+        at l1j.server.server.clientpackets.C_LoginToServer.buff(Unknown Source)
+        at l1j.server.server.clientpackets.C_LoginToServer.<init>(Unknown Source)
+        at l1j.server.server.PacketHandler.handlePacket(Unknown Source)
+        at l1j.server.server.ClientThread$AutoHandle.run(Unknown Source)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+        at java.lang.Thread.run(Thread.java:619)
+
+090706 mysql設定?
+l1j.server.server.datatables.CharBuffTable StoreBuff
+嚴重的: The last packet successfully received from the server was47781 milliseconds ago.The last packet sent successfully to the server was 47781 milliseconds ago, which  is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: The last packet successfully received from the server was47781 milliseconds ago.The last packet sent successfully to the server was 47781 milliseconds ago, which  is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+        at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+        at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+        at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+        at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+        at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+        at com.mysql.jdbc.SQLError.createCommunicationsException(SQLError.java:1074)
+        at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3270)
+        at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1932)
+        at com.mysql.jdbc.MysqlIO.sqlQueryDirect(MysqlIO.java:2101)
+        at com.mysql.jdbc.ConnectionImpl.execSQL(ConnectionImpl.java:2554)
+        at com.mysql.jdbc.PreparedStatement.executeInternal(PreparedStatement.java:1761)
+        at com.mysql.jdbc.PreparedStatement.execute(PreparedStatement.java:1021)
+        at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.execute(NewProxyPreparedStatement.java:989)
+        at l1j.server.server.datatables.CharBuffTable.StoreBuff(Unknown Source)
+        at l1j.server.server.datatables.CharBuffTable.SaveBuff(Unknown Source)
+        at l1j.server.server.ClientThread.quitGame(Unknown Source)
+        at l1j.server.server.ClientThread.run(Unknown Source)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+        at java.lang.Thread.run(Thread.java:619)
+Caused by: java.net.SocketException: Broken pipe
+        at java.net.SocketOutputStream.socketWrite0(Native Method)
+        at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:92)
+        at java.net.SocketOutputStream.write(SocketOutputStream.java:136)
+        at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:65)
+        at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:123)
+        at com.mysql.jdbc.MysqlIO.send(MysqlIO.java:3251)
+
+090705
+ l1j.server.server.clientpackets.ClientBasePacket readS
+嚴重的: OpCode=66
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+        at java.lang.String.substring(String.java:1938)
+        at l1j.server.server.clientpackets.ClientBasePacket.readS(Unknown Source)
+        at l1j.server.server.clientpackets.C_Title.<init>(Unknown Source)
+        at l1j.server.server.PacketHandler.handlePacket(Unknown Source)
+        at l1j.server.server.ClientThread$HcPacket.run(Unknown Source)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+        at java.lang.Thread.run(Thread.java:619)
+
+090704 EC編譯時警告訊息
+    [javac] Note: E:\workspace\l1j\l1jtw\src\l1j\server\server\model\skill\L1SkillTimer.java uses or overrides a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+
+090703
+l1j.server.server.ClientThread run
+嚴重的: null
+java.lang.NullPointerException
+        at l1j.server.server.model.Getback.ReadGetbackInfo(Unknown Source)
+        at l1j.server.server.model.Getback.GetBack_Location(Unknown Source)
+        at l1j.server.server.ClientThread.quitGame(Unknown Source)
+        at l1j.server.server.ClientThread.run(Unknown Source)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+        at java.lang.Thread.run(Thread.java:619)
+
+090702
+l1j.server.server.model.Instance.L1NpcInstance$NpcAIThreadImpl run
+警告: NpcAI發生例外的錯誤。
+java.lang.NullPointerException
+        at l1j.server.server.model.L1Attack.<init>(Unknown Source)
+        at l1j.server.server.model.L1MobSkillUse.physicalAttack(Unknown Source)
+        at l1j.server.server.model.L1MobSkillUse.useSkill(Unknown Source)
+        at l1j.server.server.model.L1MobSkillUse.skillUse(Unknown Source)
+        at l1j.server.server.model.Instance.L1NpcInstance.onTarget(Unknown Source)
+        at l1j.server.server.model.Instance.L1NpcInstance.AIProcess(Unknown Source)
+        at l1j.server.server.model.Instance.L1NpcInstance.access$400(Unknown Source)
+        at l1j.server.server.model.Instance.L1NpcInstance$NpcAIThreadImpl.run(Unknown Source)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+        at java.lang.Thread.run(Thread.java:619)
+
+090701
+l1j.server.server.ClientThread run
+嚴重的: null
+java.lang.NullPointerException
+        at l1j.server.server.clientpackets.C_BoardRead.<init>(Unknown Source)
+        at l1j.server.server.PacketHandler.handlePacket(Unknown Source)
+        at l1j.server.server.ClientThread.run(Unknown Source)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+        at java.lang.Thread.run(Thread.java:619)
+
+
+090612
+l1j.server.server.ClientThread run
+Exception in thread "pool-1-thread-8388" java.lang.NullPointerException
+        at l1j.server.server.utils.CalcExp.AddExpPet(Unknown Source)
+        at l1j.server.server.utils.CalcExp.calcExp(Unknown Source)
+        at l1j.server.server.model.Instance.L1MonsterInstance.distributeExpDropKarma(Unknown Source)
+        at l1j.server.server.model.Instance.L1MonsterInstance.access$000(Unknown Source)
+        at l1j.server.server.model.Instance.L1MonsterInstance$Death.run(Unknown Source)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+        at java.lang.Thread.run(Thread.java:619)
+
+090611
+l1j.server.server.ClientThread run
+嚴重的: 21504
+java.lang.ArrayIndexOutOfBoundsException: 21504
+        at l1j.server.server.model.L1World.getInventory(Unknown Source)
+        at l1j.server.server.clientpackets.C_DropItem.<init>(Unknown Source)
+        at l1j.server.server.PacketHandler.handlePacket(Unknown Source)
+        at l1j.server.server.ClientThread.run(Unknown Source)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+        at java.lang.Thread.run(Thread.java:619)
+
+090610
+l1j.server.server.ClientThread run
+嚴重的: 18432
+java.lang.ArrayIndexOutOfBoundsException: 18432
+        at l1j.server.server.model.L1World.getInventory(Unknown Source)
+        at l1j.server.server.clientpackets.C_DropItem.<init>(Unknown Source)
+        at l1j.server.server.PacketHandler.handlePacket(Unknown Source)
+        at l1j.server.server.ClientThread.run(Unknown Source)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+        at java.lang.Thread.run(Thread.java:619)
+
+090609
+l1j.server.server.model.skill.L1SkillUse runSkill
+嚴重的: null
+java.lang.NullPointerException
+        at l1j.server.server.model.skill.L1SkillUse.runSkill(Unknown Source)
+        at l1j.server.server.model.skill.L1SkillUse.handleCommands(Unknown Source)
+        at l1j.server.server.model.skill.L1SkillUse.handleCommands(Unknown Source)
+        at l1j.server.server.clientpackets.C_UseSkill.<init>(Unknown Source)
+        at l1j.server.server.PacketHandler.handlePacket(Unknown Source)
+        at l1j.server.server.ClientThread$HcPacket.run(Unknown Source)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+        at java.lang.Thread.run(Thread.java:619)
+
+090608
+l1j.server.server.model.L1PetMatch$L1PetMatchTimer run
+警告: null
+java.lang.NullPointerException
+        at java.util.concurrent.ConcurrentHashMap.containsValue(ConcurrentHashMap.java:799)
+        at java.util.concurrent.ConcurrentHashMap.contains(ConcurrentHashMap.java:863)
+        at l1j.server.server.model.L1World.getPlayer(Unknown Source)
+        at l1j.server.server.model.L1PetMatch.endPetMatch(Unknown Source)
+        at l1j.server.server.model.L1PetMatch$L1PetMatchTimer.run(Unknown Source)
+        at java.util.TimerThread.mainLoop(Timer.java:512)
+        at java.util.TimerThread.run(Timer.java:462)
+
+090607
+l1j.server.server.model.Instance.L1NpcInstance$NpcAIThreadImpl run
+警告: NpcAI發生例外的錯誤。
+java.lang.NullPointerException
+        at l1j.server.server.model.L1Attack.<init>(Unknown Source)
+        at l1j.server.server.model.L1MobSkillUse.physicalAttack(Unknown Source)
+        at l1j.server.server.model.L1MobSkillUse.useSkill(Unknown Source)
+        at l1j.server.server.model.L1MobSkillUse.skillUse(Unknown Source)
+        at l1j.server.server.model.Instance.L1NpcInstance.onTarget(Unknown Source)
+        at l1j.server.server.model.Instance.L1NpcInstance.AIProcess(Unknown Source)
+        at l1j.server.server.model.Instance.L1NpcInstance.access$400(Unknown Source)
+        at l1j.server.server.model.Instance.L1NpcInstance$NpcAIThreadImpl.run(Unknown Source)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+        at java.lang.Thread.run(Thread.java:619)
+
+090606
+l1j.server.server.ClientThread run
+嚴重的: null
+java.lang.NullPointerException
+        at l1j.server.server.clientpackets.C_MoveChar.<init>(Unknown Source)
+        at l1j.server.server.PacketHandler.handlePacket(Unknown Source)
+        at l1j.server.server.ClientThread.run(Unknown Source)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+
+090605
+l1j.server.server.model.skill.L1SkillUse runSkill
+嚴重的: Task already scheduled or cancelled
+java.lang.IllegalStateException: Task already scheduled or cancelled
+        at java.util.Timer.sched(Timer.java:358)
+        at java.util.Timer.scheduleAtFixedRate(Timer.java:296)
+        at l1j.server.server.model.Instance.L1NpcInstance.startHpRegeneration(Unknown Source)
+        at l1j.server.server.model.Instance.L1SummonInstance.setCurrentHp(Unknown Source)
+        at l1j.server.server.model.Instance.L1SummonInstance.receiveDamage(Unknown Source)
+        at l1j.server.server.model.L1Magic.commitNpc(Unknown Source)
+        at l1j.server.server.model.L1Magic.commit(Unknown Source)
+        at l1j.server.server.model.skill.L1SkillUse.runSkill(Unknown Source)
+        at l1j.server.server.model.skill.L1SkillUse.handleCommands(Unknown Source)
+        at l1j.server.server.model.L1MobSkillUse.magicAttack(Unknown Source)
+        at l1j.server.server.model.L1MobSkillUse.useSkill(Unknown Source)
+        at l1j.server.server.model.L1MobSkillUse.skillUse(Unknown Source)
+        at l1j.server.server.model.Instance.L1NpcInstance.onTarget(Unknown Source)
+        at l1j.server.server.model.Instance.L1NpcInstance.AIProcess(Unknown Source)
+        at l1j.server.server.model.Instance.L1NpcInstance.access$400(Unknown Source)
+        at l1j.server.server.model.Instance.L1NpcInstance$NpcAIThreadImpl.run(Unknown Source)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+        at java.lang.Thread.run(Thread.java:619)
+
+090604
+l1j.server.server.model.Instance.L1NpcInstance$NpcAIThreadImpl run
+警告: NpcAI發生例外的錯誤。
+java.lang.NullPointerException
+        at l1j.server.server.model.L1Attack.<init>(Unknown Source)
+        at l1j.server.server.model.L1MobSkillUse.physicalAttack(Unknown Source)
+        at l1j.server.server.model.L1MobSkillUse.useSkill(Unknown Source)
+        at l1j.server.server.model.L1MobSkillUse.skillUse(Unknown Source)
+        at l1j.server.server.model.Instance.L1NpcInstance.onTarget(Unknown Source)
+        at l1j.server.server.model.Instance.L1NpcInstance.AIProcess(Unknown Source)
+        at l1j.server.server.model.Instance.L1NpcInstance.access$400(Unknown Source)
+        at l1j.server.server.model.Instance.L1NpcInstance$NpcAIThreadImpl.run(Unknown Source)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+        at java.lang.Thread.run(Thread.java:619)
+
+090603
+l1j.server.server.clientpackets.ClientBasePacket readS
+嚴重的: OpCode=78
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+        at java.lang.String.substring(String.java:1938)
+        at l1j.server.server.clientpackets.ClientBasePacket.readS(Unknown Source)
+        at l1j.server.server.clientpackets.C_Rank.<init>(Unknown Source)
+        at l1j.server.server.PacketHandler.handlePacket(Unknown Source)
+        at l1j.server.server.ClientThread$HcPacket.run(Unknown Source)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+        at java.lang.Thread.run(Thread.java:619)
+
+090602
+l1j.server.server.ClientThread run
+嚴重的: null
+java.lang.NullPointerException
+        at l1j.server.server.clientpackets.C_ItemUSe.<init>(Unknown Source)
+        at l1j.server.server.PacketHandler.handlePacket(Unknown Source)
+        at l1j.server.server.ClientThread.run(Unknown Source)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+        at java.lang.Thread.run(Thread.java:619)
+
+090601
+l1j.server.server.clientpackets.ClientBasePacket readS
+嚴重的: OpCode=92
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+        at java.lang.String.substring(String.java:1938)
+        at l1j.server.server.clientpackets.ClientBasePacket.readS(Unknown Source)
+        at l1j.server.server.clientpackets.C_ChatWhisper.<init>(Unknown Source)
+        at l1j.server.server.PacketHandler.handlePacket(Unknown Source)
+        at l1j.server.server.ClientThread$HcPacket.run(Unknown Source)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+        at java.lang.Thread.run(Thread.java:619)
